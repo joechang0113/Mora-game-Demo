@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MoraGame</string>
+    <string name="tieresult">TIE</string>
+    <string name="loseresult">LOSE</string>
+    <string name="winresult">WIN</string>
+</resources>

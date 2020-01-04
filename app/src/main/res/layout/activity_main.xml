@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#000">-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="MORA"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="40sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#EEECEC"/>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="玩家出拳："
+                android:textSize="30sp"
+                />
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/tv_2"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="60dp"
+                >
+
+                    <Button
+                        android:id="@+id/bt_scissors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btpush"
+                        android:text="剪刀"
+                        android:textSize="30dp"/>
+                    <Button
+                        android:id="@+id/bt_stone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btpush"
+                        android:text="石頭"
+                        android:textSize="30dp"/>
+                    <Button
+                        android:id="@+id/bt_net"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_btpush"
+                        android:layout_weight="1"
+                        android:text="布"
+                        android:textSize="30dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tv_computer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="電腦出拳："
+                android:textSize="30dp"
+                />
+            <ImageView
+                android:id="@+id/im_computer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_computer"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_2"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_bt_result_push"
+            android:gravity="center"
+            android:text="輸贏:"
+            android:textSize="40dp" />
+        <TextView
+            android:id="@+id/tv_resultview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_result"
+            android:textSize="90dp"
+            android:textColor="#DB1111"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/bt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="結束看結果!"
+            android:textSize="20sp"
+            android:background="@drawable/bg_btresult"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
