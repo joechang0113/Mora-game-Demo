@@ -10,5 +10,5 @@
 
 分別按下剪刀、石頭、布來進行遊戲，如下
 
-![](https://i.imgur.com/djAwoGb.gif)
+![](https://github.com/joechang0113/Mora-game-Demo/blob/master/mora-game-demo-small.gif)
 
